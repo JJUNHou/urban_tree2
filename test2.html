@@ -51,7 +51,7 @@ map.on('load', function () {
 map.on('click', 'maine', function(e) {
 new mapboxgl.Popup()
 .setLngLat(e.lngLat)
-.setHTML(`<h3>` + e.features[0].properties.ENG_RN + `</h3>` + '<h4>' + '<b>' + '모델: ' + '</b>' + e.features[0].properties.model + '</h4>' )
+.setHTML(`<h3>` + e.features[0].properties.RN + `</h3>` + '<h4>' + '<b>' + '모델: ' + '</b>' + e.features[0].properties.Trans_Mdl + '</h4>' )
 .addTo(map);
 });
 
